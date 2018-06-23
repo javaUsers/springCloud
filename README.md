@@ -6,3 +6,4 @@
 5. eureka高可用，部署多台server时在配置中互相注册(除开自己的其他server都要注册)，client端注册所有的server
 6. eureka作为基础服务，不需要docker化
 7. config client的配置要按顺序拉取,基础的配置名字要用bootstrap.yml
+8. config client 找配置 [branch]/applicationName-profile.yml格式, branch默认不填为master
