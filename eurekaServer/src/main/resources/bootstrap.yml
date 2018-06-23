@@ -1,0 +1,10 @@
+
+spring:
+  application:
+    name: eurekaServer
+  cloud:
+    config:
+      discovery:
+        enabled: true
+        service-id: configServer
+      profile: dev
