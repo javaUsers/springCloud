@@ -13,6 +13,7 @@
         <module>eurekaServer</module>
         <module>product</module>
         <module>order</module>
+        <module>configServer</module>
     </modules>
 
     <name>SpringCloud</name>
