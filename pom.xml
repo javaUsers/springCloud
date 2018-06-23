@@ -12,6 +12,7 @@
         <module>eurekaClient</module>
         <module>eurekaServer</module>
         <module>product</module>
+        <module>order</module>
     </modules>
 
     <name>SpringCloud</name>
