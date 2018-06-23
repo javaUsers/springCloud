@@ -1,0 +1,21 @@
+server:
+  port: 8001
+eureka:
+  client:
+    # 通过查看源码知道 service-url是个map, 默认的key是 defaultZone
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+#  instance:
+#    hostname: eurekaServer
+spring:
+  application:
+    name: product
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://106.15.188.160:3306/spring_cloud?characterEncoding=utf8&useSSL=false
+    username: spring_cloud
+    password: 123456
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: create

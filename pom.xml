@@ -11,6 +11,7 @@
     <modules>
         <module>eurekaClient</module>
         <module>eurekaServer</module>
+        <module>product</module>
     </modules>
 
     <name>SpringCloud</name>
@@ -38,6 +39,11 @@
                 <version>${spring-cloud.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.projectlombok</groupId>
+                <artifactId>lombok</artifactId>
+                <version>1.16.20</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
