@@ -37,7 +37,7 @@ public class ProductController {
 
     @GetMapping("/findAll")
     public List<Product> findAll() {
-        return service.findProductsByStatus(StatusEnum.SALE.getStatus());
+        return service.findProductByProductStatus(StatusEnum.SALE.getStatus());
     }
 
 }

@@ -24,27 +24,27 @@ import java.util.Date;
  * Copyright(©) 2018 by xiaomo.
  */
 @Data
-@Table(name = "product")
+@Table(name = "product_info")
 @Entity
 public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    private int productId;
+    private long productId;
 
     private String productName;
 
-    private float price;
+    private float productPrice;
 
-    private int stock;
+    private int productStock;
 
-    private String desc;
+    private String productDescription;
 
-    private String icon;
+    private String productIcon;
 
-    private int category;
+    private int categoryType;
 
-    private int status;
+    private int productStatus;
 
     private Date createTime;
 

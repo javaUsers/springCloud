@@ -21,7 +21,7 @@ import java.util.List;
  * Copyright(©) 2018 by xiaomo.
  */
 @Repository
-public interface ProductRepository extends JpaRepository<Product, Integer> {
+public interface ProductRepository extends JpaRepository<Product, Long> {
 
     /**
      * 根据状态查找商品
@@ -29,5 +29,5 @@ public interface ProductRepository extends JpaRepository<Product, Integer> {
      * @param status 状态
      * @return 商品列表
      */
-    List<Product> findProductByStatus(int status);
+    List<Product> findProductByProductStatus(int status);
 }

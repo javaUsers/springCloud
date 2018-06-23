@@ -20,5 +20,5 @@ import java.util.List;
  */
 public interface ProductService {
 
-    List<Product> findProductsByStatus(int status);
+    List<Product> findProductByProductStatus(int status);
 }
