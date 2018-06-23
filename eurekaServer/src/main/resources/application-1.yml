@@ -2,14 +2,14 @@ server:
   port: 8761
 eureka:
   client:
-    # ×Ô¼º±¾À´¾ÍÊÇ×¢²áÖĞĞÄ£¬²»ĞèÒª×Ô¼º×¢²á×Ô¼º
+    # è‡ªå·±æœ¬æ¥å°±æ˜¯æ³¨å†Œä¸­å¿ƒï¼Œä¸éœ€è¦è‡ªå·±æ³¨å†Œè‡ªå·±
     register-with-eureka: false
     fetch-registry: false
-    # Í¨¹ı²é¿´Ô´ÂëÖªµÀ service-urlÊÇ¸ömap, Ä¬ÈÏµÄkeyÊÇ defaultZone
+    # é€šè¿‡æŸ¥çœ‹æºç çŸ¥é“ service-urlæ˜¯ä¸ªmap, é»˜è®¤çš„keyæ˜¯ defaultZone
     service-url:
       defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
   server:
-  #ÕâÊÇserver¶Ë×ÔÎÒ¼ì²â,×ÔÎÒ±£»¤Ä£Ê½,ÔÚ¿ª·¢µÄÊ±ºò,¿ÉÒÔ¹Ø±Õ,¾Íµ±×öÃ»ÓĞÕâ»ØÊÂ,²»È»¿´µ½ºì×Ö¾ÍÃô¸Ğ
+  #è¿™æ˜¯serverç«¯è‡ªæˆ‘æ£€æµ‹,è‡ªæˆ‘ä¿æŠ¤æ¨¡å¼,åœ¨å¼€å‘çš„æ—¶å€™,å¯ä»¥å…³é—­,å°±å½“åšæ²¡æœ‰è¿™å›äº‹,ä¸ç„¶çœ‹åˆ°çº¢å­—å°±æ•æ„Ÿ
     enable-self-preservation: false
 #  instance:
 #    hostname: eurekaServer
