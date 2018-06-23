@@ -1,7 +1,7 @@
 package info.xiaomo.product.controller;
 
 import info.xiaomo.product.constant.StatusEnum;
-import info.xiaomo.product.entity.ProductInfo;
+import info.xiaomo.product.entity.Product;
 import info.xiaomo.product.service.ProductService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -36,7 +36,7 @@ public class ProductController {
     }
 
     @GetMapping("/findAll")
-    public List<ProductInfo> findAll() {
+    public List<Product> findAll() {
         return service.findProductsByStatus(StatusEnum.SALE.getStatus());
     }
 
