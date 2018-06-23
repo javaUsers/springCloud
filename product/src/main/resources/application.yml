@@ -2,7 +2,7 @@ server:
   port: 8001
 eureka:
   client:
-    # Í¨¹ı²é¿´Ô´ÂëÖªµÀ service-urlÊÇ¸ömap, Ä¬ÈÏµÄkeyÊÇ defaultZone
+    # é€šè¿‡æŸ¥çœ‹æºç çŸ¥é“ service-urlæ˜¯ä¸ªmap, é»˜è®¤çš„keyæ˜¯ defaultZone
     service-url:
       defaultZone: http://localhost:8761/eureka/
 #  instance:
@@ -18,4 +18,4 @@ spring:
   jpa:
     show-sql: true
     hibernate:
-      ddl-auto: create
+      ddl-auto: none
