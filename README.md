@@ -7,3 +7,4 @@
 6. eureka作为基础服务，不需要docker化
 7. config client的配置要按顺序拉取,基础的配置名字要用bootstrap.yml
 8. config client 找配置 [branch]/applicationName-profile.yml格式, branch默认不填为master
+9. 
