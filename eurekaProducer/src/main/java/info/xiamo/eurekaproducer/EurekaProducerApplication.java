@@ -1,4 +1,4 @@
-package info.xiamo.eurekaclient;
+package info.xiamo.eurekaproducer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

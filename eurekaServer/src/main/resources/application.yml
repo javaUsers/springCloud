@@ -7,12 +7,12 @@ eureka:
     fetch-registry: false
     # 通过查看源码知道 service-url是个map, 默认的key是 defaultZone
     service-url:
-      defaultZone: http://localhost:8762/eureka/,http://localhost:8763/eureka/
+      defaultZone: http://localhost:${server.port}/eureka/
   server:
   #这是server端自我检测,自我保护模式,在开发的时候,可以关闭,就当做没有这回事,不然看到红字就敏感
     enable-self-preservation: false
-#  instance:
-#    hostname: eurekaServer
+  instance:
+    hostname: eurekaServer
 spring:
   application:
     name: eurekaServer
