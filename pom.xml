@@ -58,6 +58,11 @@
                 <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
                 <version>1.4.5.RELEASE</version>
             </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-starter-turbine</artifactId>
+                <version>1.4.5.RELEASE</version>
+            </dependency>
 
             <dependency>
                 <groupId>org.projectlombok</groupId>
